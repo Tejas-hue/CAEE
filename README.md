@@ -3,10 +3,10 @@ CONTEXT AWARE EMPATHY ENGINE
 Where machine learning meets emotional intelligence [finally]
 
 
->What This Actually Does
+What This Actually Does
 
-You’ve seen sentiment analysis before. It says:
-“Angry.” “Happy.” “Sad.” Wow, thanks bot. Very helpful.
+>You’ve seen sentiment analysis before. It says:
+>“Angry.” “Happy.” “Sad.” Wow, thanks bot. Very helpful.
 
 
 This goes further.
@@ -15,13 +15,13 @@ Support. Comfort. Validation. Motivation.
 The soft stuff. The important stuff. The stuff most AI models politely ignore.
 
 
->Why I Built It (Instead of Sleeping)
-Let me paint you a picture:
+Why I Built It (Instead of Sleeping)
+>Let me paint you a picture:
 2 months ago, I was staring at Python like it was ancient Greek.
 Now? I’ve duct-taped together a mini empathy engine using S-BERT embeddings, custom need-label mappings, and a tuned XGBoost classifier.
 
->Why?
-Because emotion detection that stops at “anger” is like Google Maps saying “you’re lost.”
+Why?
+>Because emotion detection that stops at “anger” is like Google Maps saying “you’re lost.”
 No solution. No direction. Saying someone’s “sad” doesn’t guide you — it just names the ache.
 
 But what if, instead, we asked: What does this sadness long for? Maybe it’s comfort. Maybe it’s connection. Maybe it just wants to be seen;
