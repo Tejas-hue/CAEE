@@ -56,15 +56,15 @@ Quick Demo
 What’s Under the Hood
 >I cobbled this together using:
 >
-*Python (obviously)
+>Python (obviously)
 
-*GoEmotions from HuggingFace
+>GoEmotions from HuggingFace
 
-*S-BERT for sentence embeddings
+>S-BERT for sentence embeddings
 
-*XGBoost with Optuna for hyperparameter tuning (yes, I know what that means now)
+>XGBoost with Optuna for hyperparameter tuning (yes, I know what that means now)
 
-*pandas, scikit-learn, joblib, and other tools blah blah blah
+>pandas, scikit-learn, joblib, and other tools blah blah blah
 
 Current Performance
 >Validation Accuracy: ~48%
@@ -73,23 +73,23 @@ Current Performance
 >Top labels like support, comfort, and validation are performing decently.
 >Others need work.
 
-Still To Come (a.k.a. The Vision Board)
+Still To Come:
 >
-*Drop XGBoost and move to a transformer-based classifier
+>Drop XGBoost and move to a transformer-based classifier
 >
-*Add prediction explanations (like: why was “support” chosen?)
+>Add prediction explanations (like: why was “support” chosen?)
 >
-*Plug it into a live chatbot or journaling app
+>Plug it into a live chatbot or journaling app
 >
-*Build an interactive demo in Streamlit (for non-dev humans)
+>Build an interactive demo in Streamlit (for non-dev humans)
 >
-*Create a feedback loop where the model learns what people actually need over time
+>Create a feedback loop where the model learns what people actually need over time
 >
 >Basically make it smarter than half the people I’ve met
 
 File Structure
 
-Context-Aware Empathy Engine/
+>Context-Aware Empathy Engine/
 >├── data/              # Cleaned & mapped dataset
 >
 >├── models/            # Trained classifier + label encoder
