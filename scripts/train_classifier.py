@@ -11,15 +11,15 @@ from sentence_transformers import SentenceTransformer
 import xgboost as xgb
 import optuna
 
-# === Step 1: Load and prepare data ===
+
 train_df = pd.read_csv("data/goemotions_train_needs.csv")
 val_df = pd.read_csv("data/goemotions_val_needs.csv")
 
-# Ensure 'needs' column exists and is properly formatted
+
 train_df['needs'] = train_df['need'].apply(lambda x: x.split('|') if '|' in x else [x])
 val_df['needs'] = val_df['need'].apply(lambda x: x.split('|') if '|' in x else [x])
 
-# MultiLabel binarization
+
 mlb = MultiLabelBinarizer()
 y_train = mlb.fit_transform(train_df['needs'])
 y_val = mlb.transform(val_df['needs'])
@@ -27,13 +27,13 @@ y_val = mlb.transform(val_df['needs'])
 os.makedirs("models", exist_ok=True)
 joblib.dump(mlb, "models/label_encoder.pkl")
 
-# === Step 2: Sentence Embeddings ===
-print("🔤 Encoding with Sentence-BERT...")
+
+print("Encoding with Sentence-BERT...")
 encoder = SentenceTransformer('all-MiniLM-L6-v2')
 X_train = encoder.encode(train_df['text'].tolist(), show_progress_bar=True)
 X_val = encoder.encode(val_df['text'].tolist(), show_progress_bar=True)
 
-# === Step 3: Define Optuna tuning objective ===
+
 def objective(trial):
     params = {
         "n_estimators": trial.suggest_int("n_estimators", 100, 400),
@@ -55,14 +55,14 @@ def objective(trial):
 
     return np.mean(scores)
 
-# === Step 4: Run Optuna ===
-print("🔍 Tuning XGBoost with Optuna...")
+
+print("Tuning XGBoost with Optuna...")
 study = optuna.create_study(direction="maximize")
 study.optimize(objective, n_trials=5)
 
-print("✅ Best Params:", study.best_params)
+print("Best Params:", study.best_params)
 
-# === Step 5: Final Training ===
+
 final_models = []
 for i in range(y_train.shape[1]):
     clf = xgb.XGBClassifier(**study.best_params)
