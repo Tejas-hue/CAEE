@@ -33,8 +33,11 @@ Not “ :) sad ”.
 
 Who Might Want This?
 >Mental health startups who actually care about nuance
+>
 >Chatbot developers who want their bot to get IT
+>
 >Researchers who think emotions shouldn’t be a checkbox
+>
 >That one overly ambitious friend building an AI therapist instead of going to therapy (yes, you)
 
 >Quick Demo
