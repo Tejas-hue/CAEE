@@ -1,4 +1,4 @@
-CONTEXT AWARE EMPATHY ENGINE
+#### **CONTEXT AWARE EMPATHY ENGINE**
 
 Where machine learning meets emotional intelligence [finally]
 
