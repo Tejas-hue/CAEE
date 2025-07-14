@@ -27,7 +27,7 @@ No solution. No direction. Saying someone’s “sad” doesn’t guide you — 
 >But what if, instead, we asked: What does this sadness long for? Maybe it’s comfort. Maybe it’s connection. Maybe it just wants to be seen;
 Because behind every emotion is a human need, quietly hoping someone will notice.
 
->So I built something that doesn’t just classify feelings — it contextualizes them.
+>So I built something that doesn’t just classify feelings; it contextualizes them.
 Something closer to “Oh, you’re feeling hopeless? You probably need comfort.”
 Not “ :) sad ”.
 
@@ -111,4 +111,4 @@ About Me
 >Name’s Anant Pareek.
 
 >I study psychology. I make art. I write. I do loads of other tuff-stuff that gets my friends concerned.
-And recently, I’ve been teaching myself machine learning — by building projects like this one that blend AI and emotion.
+And recently, I’ve been teaching myself machine learning, by building projects like this one that blend AI and emotion.
