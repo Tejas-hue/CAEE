@@ -1,6 +1,6 @@
 ## **CONTEXT AWARE EMPATHY ENGINE**
 
-Where machine learning meets emotional intelligence [finally]
+>Where machine learning meets emotional intelligence [finally]
 
 
 What This Actually Does
@@ -9,7 +9,7 @@ What This Actually Does
 >“Angry.” “Happy.” “Sad.” Wow, thanks bot. Very helpful.
 
 
-This goes further.
+>This goes further.
 You give it a sentence → it tells you what the human being behind that sentence actually needs.
 Support. Comfort. Validation. Motivation.
 The soft stuff. The important stuff. The stuff most AI models politely ignore.
@@ -24,18 +24,18 @@ Why?
 >Because emotion detection that stops at “anger” is like Google Maps saying “you’re lost.”
 No solution. No direction. Saying someone’s “sad” doesn’t guide you — it just names the ache.
 
-But what if, instead, we asked: What does this sadness long for? Maybe it’s comfort. Maybe it’s connection. Maybe it just wants to be seen;
+>But what if, instead, we asked: What does this sadness long for? Maybe it’s comfort. Maybe it’s connection. Maybe it just wants to be seen;
 Because behind every emotion is a human need, quietly hoping someone will notice.
 
-So I built something that doesn’t just classify feelings — it contextualizes them.
+>So I built something that doesn’t just classify feelings — it contextualizes them.
 Something closer to “Oh, you’re feeling hopeless? You probably need comfort.”
 Not “ :) sad ”.
 
->Who Might Want This?
-*Mental health startups who actually care about nuance
-*Chatbot developers who want their bot to get IT
-*Researchers who think emotions shouldn’t be a checkbox
-*That one overly ambitious friend building an AI therapist instead of going to therapy (yes, you)
+Who Might Want This?
+>Mental health startups who actually care about nuance
+>Chatbot developers who want their bot to get IT
+>Researchers who think emotions shouldn’t be a checkbox
+>That one overly ambitious friend building an AI therapist instead of going to therapy (yes, you)
 
 >Quick Demo
 $ python scripts/predict_need.py
