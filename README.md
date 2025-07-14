@@ -1,8 +1,10 @@
 CONTEXT AWARE EMPATHY ENGINE
+
 Where machine learning meets emotional intelligence [finally]
 
 
 >What This Actually Does
+
 You’ve seen sentiment analysis before. It says:
 “Angry.” “Happy.” “Sad.” Wow, thanks bot. Very helpful.
 
