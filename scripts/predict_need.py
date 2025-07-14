@@ -6,18 +6,17 @@ import os
 from datetime import datetime
 from colorama import Fore, Style, init
 
-# Initialize colorama
+
 init(autoreset=True)
 
-# Load models and label encoder
 print(Fore.YELLOW + "Loading models...")
 models = joblib.load("models/xgb_multi_models.pkl")
 mlb = joblib.load("models/label_encoder.pkl")
 
-# Load Sentence-BERT
+
 encoder = SentenceTransformer("all-MiniLM-L6-v2")
 
-# Create log file if it doesn't exist
+
 os.makedirs("outputs", exist_ok=True)
 log_path = "outputs/prediction_logs.csv"
 if not os.path.exists(log_path):
@@ -29,10 +28,10 @@ def predict_needs(text, threshold=0.3, debug=True):
     emb = encoder.encode([text])
     all_scores = {label: clf.predict_proba(emb)[0][1] for clf, label in zip(models, mlb.classes_)}
 
-    # Standard predictions
+    
     predictions = [(label, round(prob, 3)) for label, prob in all_scores.items() if prob >= threshold]
 
-    # Fallback: if only 'neutral' predicted, add soft high scores ≥ 0.15
+    
     if predictions == [('neutral', round(all_scores['neutral'], 3))]:
         fallback_preds = [(label, round(prob, 3)) for label, prob in all_scores.items()
                           if prob >= 0.15 and label != 'neutral']
@@ -46,7 +45,7 @@ def predict_needs(text, threshold=0.3, debug=True):
 
     return predictions
 
-# CLI
+
 print(Fore.GREEN + "\n🔮 Context-Aware Psychological Need Predictor (Multilabel)\nType 'exit' to quit.\n")
 while True:
     inp = input(Fore.CYAN + "Enter a sentence: ")
@@ -63,7 +62,7 @@ while True:
     else:
         print(Fore.RED + "→ No strong psychological needs detected.")
 
-    # Log to CSV
+    
     timestamp = datetime.now().isoformat()
     with open(log_path, "a", newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
