@@ -11,7 +11,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.emotions_dictionary import get_all_needs  
 
 
-print("🔍 Loading model and encoder...")
+print(" Loading model and encoder...")
 model = joblib.load("models/need_classifier.pkl")
 label_encoder: LabelEncoder = joblib.load("models/label_encoder.pkl")
 model_classes = label_encoder.classes_
@@ -26,7 +26,7 @@ with open("tests/benchmark_inputs.json", "r", encoding="utf-8") as f:
 
 correct = 0
 total = len(benchmark)
-print("\n🧪 Running Benchmark...\n")
+print("\n Running Benchmark...\n")
 
 for i, sample in enumerate(benchmark):
     text = sample["text"]
@@ -46,10 +46,10 @@ for i, sample in enumerate(benchmark):
         correct += 1
 
     print(f"{i+1}. \"{text}\"")
-    print(f"    ✅ Expected: {expected}")
-    print(f"    🔮 Predicted: {dict(zip(top_predictions, [round(p, 2) for p in top_probs]))}")
-    print(f"    {'✔️ Correct' if is_correct else '❌ Incorrect'}\n")
+    print(f"     Expected: {expected}")
+    print(f"     Predicted: {dict(zip(top_predictions, [round(p, 2) for p in top_probs]))}")
+    print(f"    {' Correct' if is_correct else ' Incorrect'}\n")
 
 # Accuracy
 accuracy = round(correct / total * 100, 2)
-print(f"🎯 Final Benchmark Score: {accuracy}% ({correct}/{total} correct)")
+print(f" Final Benchmark Score: {accuracy}% ({correct}/{total} correct)")
