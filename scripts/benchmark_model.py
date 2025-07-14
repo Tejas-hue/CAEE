@@ -8,22 +8,22 @@ import numpy as np
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from utils.emotions_dictionary import get_all_needs  # Optional for display
+from utils.emotions_dictionary import get_all_needs  
 
-# Load model and label encoder
+
 print("🔍 Loading model and encoder...")
 model = joblib.load("models/need_classifier.pkl")
 label_encoder: LabelEncoder = joblib.load("models/label_encoder.pkl")
 model_classes = label_encoder.classes_
 
-# Load S-BERT
+
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
 
-# Load benchmark samples
+
 with open("tests/benchmark_inputs.json", "r", encoding="utf-8") as f:
     benchmark = json.load(f)["samples"]
 
-# Prediction loop
+
 correct = 0
 total = len(benchmark)
 print("\n🧪 Running Benchmark...\n")
