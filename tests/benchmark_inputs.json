@@ -1,0 +1,124 @@
+{
+  "samples": [
+    {
+      "text": "No one even noticed I was gone.",
+      "expected": ["connection", "validation"]
+    },
+    {
+      "text": "Got the job!! Let’s goooo!",
+      "expected": ["celebration", "motivation"]
+    },
+    {
+      "text": "Everyone’s out there living their best life while I can’t even get a reply back.",
+      "expected": ["connection", "support"]
+    },
+    {
+      "text": "It’s like I don’t exist to them.",
+      "expected": ["acknowledgment", "validation"]
+    },
+    {
+      "text": "Wow, great. Another meeting that could’ve been an email.",
+      "expected": ["validation"]
+    },
+    {
+      "text": "They never listen unless I yell.",
+      "expected": ["understanding", "acknowledgment"]
+    },
+    {
+      "text": "I don’t feel anything anymore.",
+      "expected": ["comfort", "support"]
+    },
+    {
+      "text": "What’s the point of any of this?",
+      "expected": ["comfort", "motivation"]
+    },
+    {
+      "text": "Didn’t think I could do it, but I DID.",
+      "expected": ["support", "celebration"]
+    },
+    {
+      "text": "Just submitted my final project. Feeling unstoppable.",
+      "expected": ["motivation", "celebration"]
+    },
+    {
+      "text": "me? emotionally stable? lol good one.",
+      "expected": ["comfort", "support"]
+    },
+    {
+      "text": "This app is my therapist now 😩",
+      "expected": ["support", "connection"]
+    },
+    {
+      "text": "brb crying to Taylor Swift again",
+      "expected": ["comfort"]
+    },
+    {
+      "text": "I’m not mad, I just expected better.",
+      "expected": ["acknowledgment", "validation"]
+    },
+    {
+      "text": "I feel like a burden when I talk about my feelings.",
+      "expected": ["connection", "understanding"]
+    },
+    {
+      "text": "No one really *gets* me.",
+      "expected": ["understanding", "connection"]
+    },
+    {
+      "text": "I got through the week. That’s something, right?",
+      "expected": ["validation", "motivation"]
+    },
+    {
+      "text": "Tell me it gets better. Lie if you have to.",
+      "expected": ["comfort", "hope"]
+    },
+    {
+      "text": "I wish someone would just ask me how I’m really doing.",
+      "expected": ["acknowledgment", "connection"]
+    },
+    {
+      "text": "Everything’s fine 🙂 (it’s not)",
+      "expected": ["support", "comfort"]
+    },
+    {
+      "text": "Even when I’m in a crowd, I feel alone.",
+      "expected": ["connection", "comfort"]
+    },
+    {
+      "text": "No feedback on my work. Again.",
+      "expected": ["validation", "acknowledgment"]
+    },
+    {
+      "text": "I hate being seen as weak just because I cry.",
+      "expected": ["validation", "support"]
+    },
+    {
+      "text": "Every little win feels huge lately.",
+      "expected": ["celebration", "motivation"]
+    },
+    {
+      "text": "I need a reason to get out of bed.",
+      "expected": ["motivation", "support"]
+    },
+    {
+      "text": "Honestly, I’m just tired of pretending I’m okay.",
+      "expected": ["comfort", "understanding"]
+    },
+    {
+      "text": "Not everything needs to be fixed. Sometimes we just need to be heard.",
+      "expected": ["acknowledgment", "understanding"]
+    },
+    {
+      "text": "I miss who I used to be.",
+      "expected": ["comfort", "validation"]
+    },
+    {
+      "text": "Can someone be proud of me for once?",
+      "expected": ["validation", "celebration"]
+    },
+    {
+      "text": "Another day of bottling it all up.",
+      "expected": ["support", "acknowledgment"]
+    }
+  ]
+}

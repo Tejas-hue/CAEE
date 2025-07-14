@@ -1,0 +1,12 @@
+timestamp,input_text,predicted_needs,scores
+2025-07-13T14:58:46.626464,i feel left out and ignored,comfort|neutral,0.563|0.404
+2025-07-13T14:58:59.778147,i feel like i should not live anymore,comfort|neutral|validation,0.334|0.328|0.383
+2025-07-13T15:08:41.264171,I feel like im asking for too much,neutral|validation,0.39|0.533
+2025-07-13T15:10:32.268039,get a job,neutral,0.674
+2025-07-13T15:11:59.899325,I  feel like I am not standing up to my potential,neutral,0.354
+2025-07-13T15:12:04.891050,I feel like I am not standing up to my potential,neutral,0.354
+2025-07-13T15:13:10.803696,I feel like I might fail in life sometimes.,neutral,0.304
+2025-07-13T15:17:39.199684,i feel like im not standing up to my potential,neutral,0.352
+2025-07-13T15:17:58.591124,i feel like i might fail in life sometimes,neutral,0.352
+2025-07-13T16:17:54.919080,i feel like im not standing up to my potential,neutral,0.352
+2025-07-13T16:28:19.623882,quit,neutral|validation,0.666|0.75
