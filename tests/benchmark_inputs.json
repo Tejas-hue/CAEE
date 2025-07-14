@@ -45,7 +45,7 @@
       "expected": ["comfort", "support"]
     },
     {
-      "text": "This app is my therapist now 😩",
+      "text": "This app is my therapist now ",
       "expected": ["support", "connection"]
     },
     {
@@ -77,7 +77,7 @@
       "expected": ["acknowledgment", "connection"]
     },
     {
-      "text": "Everything’s fine 🙂 (it’s not)",
+      "text": "Everything’s fine  (it’s not)",
       "expected": ["support", "comfort"]
     },
     {
