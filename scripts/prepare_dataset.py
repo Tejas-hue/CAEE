@@ -32,4 +32,4 @@ dataset['train'].to_pandas()[['text', 'needs']].to_csv("data/goemotions_train_ne
 dataset['validation'].to_pandas()[['text', 'needs']].to_csv("data/goemotions_val_needs.csv", index=False)
 dataset['test'].to_pandas()[['text', 'needs']].to_csv("data/goemotions_test_needs.csv", index=False)
 
-print("✅ Multi-label dataset saved in /data")
+print("Multi-label dataset saved in /data")
