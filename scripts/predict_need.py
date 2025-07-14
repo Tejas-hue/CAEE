@@ -39,14 +39,14 @@ def predict_needs(text, threshold=0.3, debug=True):
             predictions += fallback_preds
 
     if debug:
-        print(Fore.CYAN + "\n🧪 Debug: All Need Probabilities")
+        print(Fore.CYAN + "\n Debug: All Need Probabilities")
         for label, prob in sorted(all_scores.items(), key=lambda x: -x[1]):
             print(f"   {label}: {round(prob, 3)}")
 
     return predictions
 
 
-print(Fore.GREEN + "\n🔮 Context-Aware Psychological Need Predictor (Multilabel)\nType 'exit' to quit.\n")
+print(Fore.GREEN + "\n Context-Aware Psychological Need Predictor (Multilabel)\nType 'exit' to quit.\n")
 while True:
     inp = input(Fore.CYAN + "Enter a sentence: ")
     if inp.lower() == "exit":
