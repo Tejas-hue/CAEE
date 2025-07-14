@@ -40,51 +40,74 @@ Who Might Want This?
 >
 >That one overly ambitious friend building an AI therapist instead of going to therapy (yes, you)
 
->Quick Demo
-$ python scripts/predict_need.py
-Enter a sentence: I feel left out and ignored.
-→ support: 0.84  
-→ validation: 0.12  
-→ connection: 0.03
-[Yes, it works. Yes, it’s slightly creepy.]
+Quick Demo
+>$ python scripts/predict_need.py
 
->What’s Under the Hood
-I cobbled this together using:
+>Enter a sentence: I feel left out and ignored.
+
+>→ support: 0.84  
+
+>→ validation: 0.12  
+
+>→ connection: 0.03
+
+>[Yes, it works. Yes, it’s slightly creepy.]
+
+What’s Under the Hood
+>I cobbled this together using:
+>
 *Python (obviously)
+
 *GoEmotions from HuggingFace
+
 *S-BERT for sentence embeddings
+
 *XGBoost with Optuna for hyperparameter tuning (yes, I know what that means now)
+
 *pandas, scikit-learn, joblib, and other tools blah blah blah
 
->Current Performance
-Validation Accuracy: ~48%
-(Considering the complexity of human emotions and how little training data maps to needs… doesn't seem half bad.)
+Current Performance
+>Validation Accuracy: ~48%
+>(Considering the complexity of human emotions and how little training data maps to needs… doesn't seem half bad.)
 
-Top labels like support, comfort, and validation are performing decently.
-Others need work.
+>Top labels like support, comfort, and validation are performing decently.
+>Others need work.
 
->Still To Come (a.k.a. The Vision Board)
+Still To Come (a.k.a. The Vision Board)
+>
 *Drop XGBoost and move to a transformer-based classifier
+>
 *Add prediction explanations (like: why was “support” chosen?)
+>
 *Plug it into a live chatbot or journaling app
+>
 *Build an interactive demo in Streamlit (for non-dev humans)
+>
 *Create a feedback loop where the model learns what people actually need over time
-Basically make it smarter than half the people I’ve met
+>
+>Basically make it smarter than half the people I’ve met
 
->File Structure
+File Structure
 
 Context-Aware Empathy Engine/
-├── data/              # Cleaned & mapped dataset
-├── models/            # Trained classifier + label encoder
-├── scripts/           # Predict, train, prepare, rewrite, score
-├── utils/             # Emotion → need mapping logic
-├── notebooks/         # Where the chaos started
-├── tests/             # Sanity-checks so I can sleep
-├── outputs/           # Future visualizations live here
-├── README.md          # You're reading it. Meta.
+>├── data/              # Cleaned & mapped dataset
+>
+>├── models/            # Trained classifier + label encoder
+>
+>├── scripts/           # Predict, train, prepare, rewrite, score
+>
+>├── utils/             # Emotion → need mapping logic
+>
+>├── notebooks/         # Where the chaos started
+>
+>├── tests/             # Sanity-checks so I can sleep
+>
+>├── outputs/           # Future visualizations live here
+>
+>├── README.md          # You're reading it. Meta.
 
->About Me
-Name’s Anant Pareek.
+About Me
+>Name’s Anant Pareek.
 
-I study psychology. I make art. I write. I do loads of other tuff-stuff that gets my friends concerned.
+>I study psychology. I make art. I write. I do loads of other tuff-stuff that gets my friends concerned.
 And recently, I’ve been teaching myself machine learning — by building projects like this one that blend AI and emotion.
